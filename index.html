@@ -1,149 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Windsor Blocked Drain Information Guide</title>
-<meta name="description" content="An educational blocked drain and drainage information guide for Windsor, covering causes, local conditions, neighbourhood drainage behaviour, seasonal issues, and UK regulations." />
+<title>Windsor Drainage Information Resource | Educational Guide</title>
+<meta name="description" content="An independent educational resource explaining drainage systems, blocked drains, local soil conditions, seasonal behaviour, and neighbourhood drainage patterns across Windsor, Eton, Dedworth, Old Windsor and surrounding areas." />
 
-<meta property="og:title" content="Windsor Blocked Drain Information Guide" />
-<meta property="og:description" content="Educational drainage guide for Windsor, covering blocked drains, local soil conditions, Thames-side drainage behaviour, and common household drainage issues." />
-<meta property="og:url" content="https://www.windsorblockeddrain.co.uk" />
-<meta property="og:type" content="website" />
-
+<!-- --------------------------------------------------
+     MODERN CSS WITH AUTO LIGHT/DARK MODE
+-------------------------------------------------- -->
 <style>
+:root {
+  --bg-light: #f7f7f7;
+  --bg-dark: #121212;
+  --text-light: #222;
+  --text-dark: #e6e6e6;
+  --card-light: #ffffff;
+  --card-dark: #1e1e1e;
+  --accent: #0057a3;
+  --accent-dark: #66aaff;
+  --border-light: #dcdcdc;
+  --border-dark: #333;
+  --radius: 10px;
+  --shadow-light: 0 1px 4px rgba(0,0,0,0.08);
+  --shadow-dark: 0 1px 4px rgba(0,0,0,0.4);
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.7;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
-  color: #222;
+  background: var(--bg-light);
+  color: var(--text-light);
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+  }
+}
+
 header {
-  background: #004b8d;
+  background: var(--accent);
   color: #fff;
-  padding: 25px 20px;
+  padding: 35px 20px;
   text-align: center;
 }
+
 section {
-  background: #fff;
-  padding: 20px;
+  background: var(--card-light);
+  padding: 25px;
   max-width: 900px;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  margin: 25px auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-light);
 }
+
+@media (prefers-color-scheme: dark) {
+  section {
+    background: var(--card-dark);
+    box-shadow: var(--shadow-dark);
+  }
+}
+
 h1, h2, h3 {
-  color: #004b8d;
+  color: var(--accent);
 }
+
+@media (prefers-color-scheme: dark) {
+  h1, h2, h3 {
+    color: var(--accent-dark);
+  }
+}
+
 nav {
-  background: #e6e6e6;
-  padding: 10px;
+  background: #eaeaea;
+  padding: 12px;
   text-align: center;
 }
+
+@media (prefers-color-scheme: dark) {
+  nav {
+    background: #1a1a1a;
+  }
+}
+
 nav a {
   margin: 0 12px;
   font-weight: bold;
-  color: #004b8d;
+  color: var(--accent);
   text-decoration: none;
-  display: inline-block;
-  padding: 4px 0;
 }
-a {
-  color: #004b8d;
+
+@media (prefers-color-scheme: dark) {
+  nav a {
+    color: var(--accent-dark);
+  }
 }
+
 footer {
-  background: #004b8d;
+  background: var(--accent);
   color: #fff;
   text-align: center;
-  padding: 20px;
-  margin-top: 30px;
-}
-.toc ul {
-  list-style: none;
-  padding-left: 0;
-}
-.toc li {
-  margin: 4px 0;
+  padding: 25px;
+  margin-top: 40px;
 }
 </style>
 
-<!-- Breadcrumb Schema -->
+<!-- --------------------------------------------------
+     SCHEMA: WEBSITE + ORGANIZATION
+-------------------------------------------------- -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.windsorblockeddrain.co.uk/"
-    }
-  ]
+"@context": "https://schema.org",
+"@type": "WebSite",
+"name": "Windsor Drainage Information Resource",
+"url": "https://www.windsorblockeddrain.co.uk",
+"publisher": {
+  "@type": "Organization",
+  "name": "Windsor Drainage Information Resource",
+  "email": "marshall.salesconnect@gmail.com"
+}
 }
 </script>
 
-<!-- Article Schema -->
+<!-- --------------------------------------------------
+     SCHEMA: BREADCRUMBS
+-------------------------------------------------- -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Windsor Blocked Drain Information Guide",
-  "description": "Educational drainage guide for Windsor, covering blocked drains, local soil conditions, Thames-side drainage behaviour, and common household drainage issues.",
-  "about": {
-    "@type": "Place",
-    "name": "Windsor, Berkshire, UK"
-  },
-  "author": {
-    "@type": "Organization",
-    "name": "Windsor Drainage Information Resource"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Windsor Drainage Information Resource"
-  },
-  "mainEntityOfPage": "https://www.windsorblockeddrain.co.uk/"
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+  {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://www.windsorblockeddrain.co.uk/"
+  }
+]
 }
 </script>
 
-<!-- How-To Schema -->
+<!-- --------------------------------------------------
+     SCHEMA: ARTICLE (MAIN PAGE)
+-------------------------------------------------- -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "How to Safely Try Clearing a Simple Slow-Draining Sink",
-  "description": "A safe, basic guide explaining simple steps Windsor homeowners can try before contacting a professional.",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "Remove visible debris",
-      "text": "Check the plughole and remove any visible debris such as hair or soap buildup."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Use warm water",
-      "text": "Pour warm water down the sink to help loosen minor buildup."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Try a basic plunger",
-      "text": "Use a household plunger to create suction and help shift small obstructions."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Stop if resistance is strong",
-      "text": "If the blockage does not move easily, stop to avoid causing damage."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Contact a professional",
-      "text": "If the issue persists, contact a qualified drainage engineer."
-    }
-  ]
+"@context": "https://schema.org",
+"@type": "Article",
+"headline": "Drainage Information for Windsor",
+"description": "Educational drainage guide for Windsor, covering blocked drains, soil conditions, seasonal behaviour, neighbourhood drainage patterns, and local environmental factors.",
+"about": {
+  "@type": "Place",
+  "name": "Windsor, Berkshire, UK"
+},
+"author": {
+  "@type": "Organization",
+  "name": "Windsor Drainage Information Resource"
+},
+"publisher": {
+  "@type": "Organization",
+  "name": "Windsor Drainage Information Resource"
+},
+"mainEntityOfPage": "https://www.windsorblockeddrain.co.uk/"
+}
+</script>
+
+<!-- --------------------------------------------------
+     SCHEMA: HOW-TO (SAFE HOMEOWNER STEPS)
+-------------------------------------------------- -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "HowTo",
+"name": "How to Safely Try Clearing a Simple Slow-Draining Sink",
+"description": "A safe, basic guide explaining simple steps Windsor homeowners can try before contacting a professional.",
+"step": [
+  {"@type": "HowToStep","name": "Remove visible debris","text": "Check the plughole and remove any visible debris such as hair or soap buildup."},
+  {"@type": "HowToStep","name": "Use warm water","text": "Pour warm (not boiling) water down the drain to help loosen minor buildup."},
+  {"@type": "HowToStep","name": "Try a basic plunger","text": "Use a household plunger to create suction and help dislodge small obstructions."},
+  {"@type": "HowToStep","name": "Stop if resistance is strong","text": "If the blockage does not move easily, stop to avoid causing damage."}
+]
 }
 </script>
 
@@ -152,273 +193,174 @@ footer {
 <body>
 
 <header>
-  <h1>Windsor Blocked Drain Information Guide</h1>
-  <p>A complete educational guide explaining how drainage systems behave in Windsor and why blocked drains occur in different neighbourhoods across the town.</p>
-  <p>For enquiries about this domain, contact: <strong>marshall.salesconnect@gmail.com</strong></p>
-  <p><em>Last updated: March 2026</em></p>
+<h1>Windsor Drainage Information Resource</h1>
+<p>A comprehensive educational guide explaining how drainage systems work across Windsor, Eton, Dedworth, Old Windsor and surrounding areas.</p>
+<p>For enquiries about this domain, contact: <strong>marshall.salesconnect@gmail.com</strong></p>
+<p><em>Last updated: March 2026</em></p>
 </header>
 
 <nav>
-  <a href="#overview">Overview</a>
-  <a href="#causes">Causes</a>
-  <a href="#waterhardness">Water Hardness</a>
-  <a href="#propertyage">Property Age</a>
-  <a href="#seasonal">Seasonal</a>
-  <a href="#geography">Geography</a>
-  <a href="#neighbourhoods">Neighbourhoods</a>
-  <a href="#mistakes">Mistakes</a>
-  <a href="#glossary">Glossary</a>
-  <a href="#regulations">Regulations</a>
-  <a href="#faq">FAQ</a>
+<a href="#overview">Overview</a>
+<a href="#drainage">Drainage System</a>
+<a href="#local">Local Conditions</a>
+<a href="#soil">Soil & Ground Movement</a>
+<a href="#seasonal">Seasonal Behaviour</a>
+<a href="#neighbourhoods">Neighbourhood Profiles</a>
+<a href="#issues">Common Issues</a>
+<a href="#maintenance">Homeowner Awareness</a>
+<a href="#glossary">Glossary</a>
+<a href="#faq">FAQ</a>
 </nav>
 
-<section class="toc">
-  <h2>Table of Contents</h2>
-  <ul>
-    <li><a href="#overview">Overview of Drainage in Windsor</a></li>
-    <li><a href="#causes">Common Causes of Blocked Drains</a></li>
-    <li><a href="#waterhardness">Water Hardness in Windsor</a></li>
-    <li><a href="#propertyage">Drainage by Property Age</a></li>
-    <li><a href="#seasonal">Seasonal Drainage Issues</a></li>
-    <li><a href="#geography">How Windsor’s Geography Affects Drainage</a></li>
-    <li><a href="#neighbourhoods">Neighbourhood Drainage Profiles</a></li>
-    <li><a href="#mistakes">Common Homeowner Mistakes</a></li>
-    <li><a href="#glossary">Glossary of Drainage Terms</a></li>
-    <li><a href="#regulations">UK Regulations</a></li>
-    <li><a href="#faq">Frequently Asked Questions</a></li>
-  </ul>
-</section>
-
 <section id="overview">
-  <h2>Overview of Drainage in Windsor</h2>
-  <p>Windsor’s drainage systems vary widely due to the town’s mix of historic buildings, riverside properties, modern estates and clay-based soil. Homes near the River Thames may experience different drainage behaviour compared with properties in Dedworth, Clewer or Eton.</p>
-  <p>The town’s geology, property age and proximity to the river all influence how drains perform and why blockages occur.</p>
+<h2>Overview of Drainage in Windsor</h2>
+<p>Windsor’s drainage systems vary widely due to the town’s mix of historic buildings, riverside areas, modern estates and clay‑based soil. Homes near the River Thames, including parts of Eton and Old Windsor, often experience different drainage behaviour compared with higher‑elevation areas such as Dedworth and Clewer.</p>
+<p>This guide explains how drainage works, why blockages occur, and how local environmental factors influence performance across Windsor.</p>
 </section>
 
-<section id="causes">
-  <h2>Common Causes of Blocked Drains in Windsor</h2>
-  <p>Blocked drains in Windsor are often linked to a combination of household habits, local soil conditions and the age of drainage systems.</p>
-  <ul>
-    <li><strong>Fat, oil and grease buildup:</strong> A common cause of slow-draining sinks.</li>
-    <li><strong>Hair and soap residue:</strong> Often affects bathroom drains.</li>
-    <li><strong>Tree root ingress:</strong> Common in older areas with mature trees.</li>
-    <li><strong>Clay soil movement:</strong> Can affect older clay drainage pipes.</li>
-    <li><strong>Hard water limescale:</strong> Can reduce internal pipe diameter over time.</li>
-    <li><strong>Seasonal rainfall:</strong> Heavy rain can highlight existing drainage issues.</li>
-  </ul>
+<section id="drainage">
+<h2>How Drainage Systems Work</h2>
+<p>Domestic drainage systems remove wastewater from sinks, baths, showers, toilets and appliances. Most systems rely on gravity, meaning pipes must be correctly angled to allow smooth flow.</p>
+<ul>
+<li><strong>Waste pipes:</strong> Carry wastewater from fixtures.</li>
+<li><strong>Soil stacks:</strong> Vertical pipes that carry toilet waste.</li>
+<li><strong>Traps:</strong> Prevent sewer gases entering the home.</li>
+<li><strong>Ventilation:</strong> Allows air movement to maintain flow.</li>
+</ul>
+<p>Understanding these components helps homeowners recognise early signs of developing issues.</p>
 </section>
 
-<section id="waterhardness">
-  <h2>Water Hardness in Windsor</h2>
-  <p>Windsor is located in a hard-water region. Hard water contains minerals such as calcium and magnesium, which can contribute to limescale buildup inside household pipework.</p>
-  <p>While limescale does not cause blockages on its own, it can narrow internal pipe diameter, making drains more prone to slow flow or buildup from everyday use.</p>
+<section id="local">
+<h2>Local Drainage Conditions in Windsor</h2>
+<p>Windsor’s proximity to the River Thames and its varied building ages create unique drainage characteristics across the town.</p>
+<ul>
+<li><strong>Riverside areas (Eton, Old Windsor):</strong> Higher moisture levels and older clay drains.</li>
+<li><strong>Windsor town centre:</strong> Historic buildings with adapted drainage layouts.</li>
+<li><strong>Dedworth:</strong> Mixed‑age housing with varied pipe materials.</li>
+<li><strong>Clewer Village:</strong> Older properties with traditional drainage systems.</li>
+<li><strong>Castle Hill area:</strong> Elevation changes affecting flow behaviour.</li>
+</ul>
 </section>
 
-<section id="propertyage">
-  <h2>Drainage in Windsor by Property Age</h2>
-  <p>Different eras of Windsor housing use different drainage materials and layouts.</p>
-
-  <h3>Georgian & Victorian Properties</h3>
-  <ul>
-    <li>May still use older clay drainage pipes</li>
-    <li>Narrower pipe diameters compared with modern systems</li>
-    <li>More susceptible to tree root ingress</li>
-  </ul>
-
-  <h3>1930s–1960s Homes</h3>
-  <ul>
-    <li>Mix of clay and early plastic drainage systems</li>
-    <li>Older gully designs may still be present</li>
-  </ul>
-
-  <h3>1970s–1990s Estates</h3>
-  <ul>
-    <li>More consistent use of plastic drainage</li>
-    <li>Improved layouts but still affected by soil movement</li>
-  </ul>
-
-  <h3>Modern Developments</h3>
-  <ul>
-    <li>Updated drainage systems meeting current standards</li>
-    <li>Less likely to have clay pipes</li>
-  </ul>
+<section id="soil">
+<h2>Soil, Clay & Ground Movement</h2>
+<p>Much of Windsor sits on clay soil, which expands and contracts with moisture changes. This can affect older clay drainage pipes, sometimes leading to misalignment or cracking.</p>
+<p>Tree roots from mature trees in areas such as Eton Wick and Old Windsor may also enter older pipe joints.</p>
 </section>
 
 <section id="seasonal">
-  <h2>Seasonal Drainage Issues in Windsor</h2>
-  <p>Drainage behaviour in Windsor can change throughout the year.</p>
-
-  <h3>Winter</h3>
-  <ul>
-    <li>Cold weather can slow water flow</li>
-    <li>Outdoor drains may be affected by frost</li>
-  </ul>
-
-  <h3>Spring</h3>
-  <ul>
-    <li>Tree roots become more active</li>
-    <li>Ground movement can affect older pipes</li>
-  </ul>
-
-  <h3>Summer</h3>
-  <ul>
-    <li>Lower rainfall can highlight slow-flowing drains</li>
-  </ul>
-
-  <h3>Autumn</h3>
-  <ul>
-    <li>Leaf debris can affect outdoor drainage</li>
-    <li>Heavy rainfall may reveal underlying issues</li>
-  </ul>
-</section>
-
-<section id="geography">
-  <h2>How Windsor’s Geography Affects Drainage</h2>
-  <p>Windsor’s location on the River Thames and its clay-based soil influence drainage performance across the town.</p>
-
-  <h3>Thames Floodplain</h3>
-  <p>Riverside areas may experience higher groundwater levels, which can affect older drainage systems.</p>
-
-  <h3>Clay Soil</h3>
-  <p>Clay expands and contracts with moisture changes, sometimes affecting older clay pipes.</p>
-
-  <h3>Tree Root Activity</h3>
-  <p>Mature trees in areas such as Clewer, Eton and Old Windsor can extend roots into older drainage systems.</p>
-
-  <h3>Elevation Differences</h3>
-  <p>Areas such as Englefield Green sit higher than riverside neighbourhoods, which can influence drainage flow characteristics.</p>
+<h2>Seasonal Drainage Behaviour</h2>
+<h3>Winter</h3>
+<ul><li>Cold temperatures can affect older pipe joints.</li></ul>
+<h3>Spring</h3>
+<ul><li>Tree root activity increases.</li></ul>
+<h3>Summer</h3>
+<ul><li>Higher water usage can highlight slow drains.</li></ul>
+<h3>Autumn</h3>
+<ul><li>Falling leaves contribute to outdoor drainage issues.</li></ul>
 </section>
 
 <section id="neighbourhoods">
-  <h2>Neighbourhood Drainage Profiles in Windsor</h2>
-  <p>Different parts of Windsor experience different drainage characteristics due to variations in property age, soil type and proximity to the river.</p>
+<h2>Neighbourhood Drainage Profiles</h2>
+<h3>Windsor Town Centre</h3>
+<p>Historic buildings with adapted drainage layouts.</p>
 
-  <h3>Windsor Town Centre</h3>
-  <p>Older buildings with mixed drainage layouts and narrow pipework.</p>
+<h3>Eton & Eton Wick</h3>
+<p>Riverside moisture and older clay drains.</p>
 
-  <h3>Clewer Village</h3>
-  <p>Historic properties with older clay drainage systems.</p>
+<h3>Dedworth</h3>
+<p>Mixed‑age housing with varied drainage performance.</p>
 
-  <h3>Clewer Green</h3>
-  <p>Mixed-age housing with varied drainage performance.</p>
+<h3>Old Windsor</h3>
+<p>Tree root activity and older pipe systems.</p>
 
-  <h3>Dedworth</h3>
-  <p>Large residential area with a mix of older and modern drainage systems.</p>
-
-  <h3>Eton</h3>
-  <p>Historic riverside properties with older drainage layouts.</p>
-
-  <h3>Eton Wick</h3>
-  <p>Village properties with mixed drainage characteristics.</p>
-
-  <h3>Old Windsor</h3>
-  <p>Older homes with clay pipes and mature tree root activity.</p>
-
-  <h3>Datchet</h3>
-  <p>Riverside village with higher groundwater levels.</p>
-
-  <h3>Englefield Green</h3>
-  <p>Higher elevation with modern and older drainage systems.</p>
-
-  <h3>Spital</h3>
-  <p>Mixed residential area with varied drainage layouts.</p>
-
-  <h3>Boveney</h3>
-  <p>Riverside properties with older drainage systems.</p>
-
-  <h3>Windsor Riverside Areas</h3>
-  <p>Higher moisture levels and older drainage infrastructure.</p>
-
-  <h3>The Long Walk / Park Street Area</h3>
-  <p>Historic properties with traditional drainage systems.</p>
-
-  <h3>St. Leonard’s Road Area</h3>
-  <p>Mixed commercial and residential drainage layouts.</p>
+<h3>Clewer Village</h3>
+<p>Traditional drainage layouts with older materials.</p>
 </section>
 
-<section id="mistakes">
-  <h2>Common Homeowner Mistakes That Affect Drainage</h2>
-  <ul>
-    <li>Flushing wipes or sanitary products</li>
-    <li>Pouring fat, oil or grease down sinks</li>
-    <li>Ignoring slow drainage or gurgling sounds</li>
-    <li>Allowing leaf debris to build up around outdoor drains</li>
-    <li>Not knowing where the main drain access point is</li>
-  </ul>
+<section id="issues">
+<h2>Common Drainage Issues in Windsor</h2>
+<ul>
+<li><strong>Slow drains:</strong> Often caused by buildup or partial blockages.</li>
+<li><strong>Gurgling sounds:</strong> May indicate venting or flow issues.</li>
+<li><strong>Tree root ingress:</strong> Common in older clay systems.</li>
+<li><strong>Ground movement:</strong> Can affect pipe alignment.</li>
+</ul>
+</section>
+
+<section id="maintenance">
+<h2>Homeowner Awareness Tips</h2>
+<ul>
+<li>Use strainers to reduce debris entering drains.</li>
+<li>Avoid flushing wipes or sanitary products.</li>
+<li>Monitor slow drainage as an early warning sign.</li>
+<li>Be aware of seasonal changes affecting flow.</li>
+</ul>
 </section>
 
 <section id="glossary">
-  <h2>Glossary of Drainage Terms</h2>
-  <ul>
-    <li><strong>Gully:</strong> A drain that collects wastewater from sinks or outdoor areas.</li>
-    <li><strong>Soil Stack:</strong> A vertical pipe that carries waste from toilets.</li>
-    <li><strong>Interceptor:</strong> A chamber found in older drainage systems.</li>
-    <li><strong>Trap:</strong> A curved pipe section that prevents sewer gases entering the home.</li>
-    <li><strong>Vent Pipe:</strong> Allows air into the drainage system to maintain flow.</li>
-    <li><strong>Limescale:</strong> Mineral buildup caused by hard water.</li>
-    <li><strong>Surface Water Drainage:</strong> Drains that collect rainwater from roofs and outdoor areas.</li>
-  </ul>
-</section>
-
-<section id="regulations">
-  <h2>UK Drainage Regulations & Safety Considerations</h2>
-  <ul>
-    <li><a href="https://www.gov.uk/building-regulations-approval" target="_blank">Building Regulations (Part H)</a> – drainage and waste disposal.</li>
-    <li><a href="https://www.environment-agency.gov.uk" target="_blank">Environment Agency</a> – flood risk and water management.</li>
-    <li><a href="https://www.water.org.uk" target="_blank">Water UK</a> – public water and sewerage information.</li>
-  </ul>
-  <p>This website is educational and does not provide professional drainage services or repair instructions.</p>
+<h2>Glossary of Drainage Terms</h2>
+<ul>
+<li><strong>Soil Stack:</strong> Vertical pipe carrying toilet waste.</li>
+<li><strong>Trap:</strong> Curved pipe section blocking sewer gases.</li>
+<li><strong>Vent Pipe:</strong> Allows air movement in the system.</li>
+<li><strong>Clay Pipe:</strong> Older drainage material prone to cracking.</li>
+<li><strong>Root Ingress:</strong> Tree roots entering pipe joints.</li>
+</ul>
 </section>
 
 <section id="faq">
-  <h2>Frequently Asked Questions</h2>
+<h2>Frequently Asked Questions</h2>
 
-  <h3>Why do drains block in Windsor?</h3>
-  <p>Common causes include fat and grease buildup, hair, soap residue, tree roots and older clay drainage systems.</p>
+<h3>Why do drains block in Windsor?</h3>
+<p>Common causes include debris buildup, tree roots, clay soil movement and older pipe materials.</p>
 
-  <h3>Why do drains smell?</h3>
-  <p>Smells can occur when water traps dry out or when organic material builds up inside pipework.</p>
+<h3>Why do some areas drain slower than others?</h3>
+<p>Elevation, soil type and pipe age all influence drainage performance.</p>
 
-  <h3>Why do drains gurgle?</h3>
-  <p>Gurgling often indicates air trapped in the drainage system or slow water flow.</p>
+<h3>What causes gurgling sounds?</h3>
+<p>Gurgling often indicates air movement issues or partial blockages.</p>
 
-  <h3>Why does my toilet back up?</h3>
-  <p>Backups may be caused by blockages in the main household drain or external pipework.</p>
+<h3>Are Windsor drains affected by the River Thames?</h3>
+<p>Riverside areas may experience higher moisture levels and older drainage layouts.</p>
 
-  <h3>Where is the main drain access point?</h3>
-  <p>Most Windsor homes have an access chamber in the garden, driveway or side passage.</p>
 </section>
 
-<!-- FAQ Schema -->
+<!-- --------------------------------------------------
+     SCHEMA: FAQ PAGE
+-------------------------------------------------- -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why do drains block in Windsor?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Common causes include fat and grease buildup, hair, soap residue, tree roots and older clay drainage systems."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why do drains smell?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Smells can occur when water traps dry out or when organic material
-"text": "Most Windsor homes have an access chamber in the garden, driveway or side passage."
-      }
-    }
-  ]
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [
+  {
+    "@type": "Question",
+    "name": "Why do drains block in Windsor?",
+    "acceptedAnswer": {"@type": "Answer","text": "Common causes include debris buildup, tree roots, clay soil movement and older pipe materials."}
+  },
+  {
+    "@type": "Question",
+    "name": "Why do some areas drain slower than others?",
+    "acceptedAnswer": {"@type": "Answer","text": "Elevation, soil type and pipe age all influence drainage performance."}
+  },
+  {
+    "@type": "Question",
+    "name": "What causes gurgling sounds?",
+    "acceptedAnswer": {"@type": "Answer","text": "Gurgling often indicates air movement issues or partial blockages."}
+  },
+  {
+    "@type": "Question",
+    "name": "Are Windsor drains affected by the River Thames?",
+    "acceptedAnswer": {"@type": "Answer","text": "Riverside areas may experience higher moisture levels and older drainage layouts."}
+  }
+]
 }
 </script>
 
 <footer>
-  <p>&copy; 2026 Windsor Drainage Information Resource. All rights reserved.</p>
-  <p>Domain managed by: <strong>marshall.salesconnect@gmail.com</strong></p>
+<p>&copy; 2026 Windsor Drainage Information Resource. All rights reserved.</p>
+<p>Domain managed by: <strong>marshall.salesconnect@gmail.com</strong></p>
 </footer>
 
 </body>
